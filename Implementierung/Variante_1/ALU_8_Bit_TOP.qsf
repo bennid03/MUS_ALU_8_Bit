@@ -56,4 +56,5 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_A8 -to Ausgang
 set_location_assignment PIN_C10 -to Eingang1
 set_location_assignment PIN_C11 -to Eingang2
+set_global_assignment -name VHDL_FILE D_Flipflop.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
