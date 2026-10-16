@@ -1,0 +1,104 @@
+# 
+# Mithilfe dieser gitignore-Datei werden die Dateien festgelegt, die nicht in git versioniert werden sollen.
+# Bei den Dateien, die nicht versioniert werden sollen handelt es sich größtenteils um Dateien, die 
+# automatisch generiert werden.
+#
+# Diese Datei wurde mit der Hilfe von ChatGPT erstellt.
+#
+# Benjamin Dithmar
+#
+#############################################################################################################################
+#############################################################################################################################
+
+# Automatisch generierte Ordner
+**/db/
+**/incremental_db/
+**/output_files/
+**/simulation/
+**/tmp/
+
+# Kompilierte Simulations-Dateien
+**/*.vcd
+**/*.wlf
+**/*.sdo
+**/*.sdf
+**/*.vho
+**/*.vqm
+
+# Reports & Logs
+**/*.rpt
+**/*.log
+**/*.html
+
+# Backups & temporäre Dateien
+**/*~
+**/*.bak
+**/*.tmp
+
+# Tool-spezifische Dateien
+**/*.qdb
+**/*.jdi
+**/*.qws
+**/*.qdf
+**/*.qdf.bak
+**/*.sopcinfo
+
+# Softcore
+**/*.vho
+**/*.vqm
+**/*.wlf
+**/*.sopcinfo
+**/*_report.txt
+
+**/c5_pin_model_dump.txt
+
+
+# ------------------------------------
+# Nios II / Eclipse Workspace
+# ------------------------------------
+**/.metadata/
+**/.settings/
+**/RemoteSystemsTempFiles/
+
+
+# Build- und Debug-Verzeichnisse
+**/obj/
+**/debug/
+**/release/
+
+# Kompilierte Artefakte
+**/*.elf
+**/*.map
+**/*.hex
+**/*.bin
+**/*.o
+**/*.so
+**/*.a
+
+
+# ------------------------------------
+# Quartus Platform Designer (Qsys)
+# ------------------------------------
+**/*.sopcinfo
+**/*.spd
+**/*.cmp
+**/*_inst.vhd
+**/*_inst.v
+**/*_bb.v
+**/*_bb.vhd
+**/*_report.txt
+
+# Generierte Unterordner
+**/synthesis/
+**/sim/
+**/testbench/
+
+# ---------------------------------------------------
+# Diese Dateien dürfen nicht ignoriert werden
+#   - *.qpf (Projektdefinition)
+#   - *.qsf (Projektsettings)
+#   - *.vhd / *.vhdl (Quellcode)
+#   - *.sdc (Constraints)
+#   - *.bdf / *.bsf (Blockdiagramme)
+#   - *.qip (IP-Files)
+# ---------------------------------------------------
