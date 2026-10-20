@@ -9,9 +9,10 @@ use ieee.numeric_std.all;
 Entity ALU_8_Bit_TOP is
 Port(
 	Taster_CLK: in std_logic;
-	Daten1: in std_logic;
-	Flipflop_Ausgang: out std_logic;
-	Flipflop_Ausgang_negiert: out std_logic
+	Daten: in std_logic;
+	Load: in std_logic;
+	Register_Ausgang: out std_logic;
+	Register_Ausgang_negiert: out std_logic
 );
 End ALU_8_Bit_TOP;
 
@@ -25,8 +26,8 @@ Architecture Arch_ALU_8_Bit_TOP of ALU_8_Bit_TOP is
 Begin
 
 		
-	D_Flipflop1: entity work.D_Flipflop
-		port map(Taster_CLK, Daten1, Flipflop_Ausgang, Flipflop_Ausgang_negiert);
+	Register1: entity work.Register_1_Bit
+		port map(Taster_CLK, Load, Daten, Register_Ausgang, Register_Ausgang_negiert);
 	
 
 

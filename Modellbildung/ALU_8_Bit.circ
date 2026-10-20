@@ -62,13 +62,37 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(190,170)" name="Pin">
+    <comp lib="0" loc="(170,170)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="D"/>
+    </comp>
+    <comp lib="0" loc="(170,190)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="CLK"/>
     </comp>
-    <comp lib="0" loc="(190,190)" name="Pin">
+    <comp lib="0" loc="(180,320)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="D"/>
+      <a name="label" val="Load"/>
+    </comp>
+    <comp lib="0" loc="(180,340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="D1"/>
+    </comp>
+    <comp lib="0" loc="(180,360)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CLK1"/>
+    </comp>
+    <comp lib="0" loc="(500,320)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Q1"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(500,340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="not_Q1"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(520,170)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -83,21 +107,27 @@
       <a name="output" val="true"/>
     </comp>
     <comp loc="(480,170)" name="D_Flipflop"/>
-    <wire from="(190,170)" to="(260,170)"/>
-    <wire from="(190,190)" to="(260,190)"/>
+    <comp loc="(480,320)" name="Register_1_Bit"/>
+    <wire from="(170,170)" to="(260,170)"/>
+    <wire from="(170,190)" to="(260,190)"/>
+    <wire from="(180,320)" to="(260,320)"/>
+    <wire from="(180,340)" to="(260,340)"/>
+    <wire from="(180,360)" to="(260,360)"/>
     <wire from="(480,170)" to="(520,170)"/>
     <wire from="(480,190)" to="(520,190)"/>
+    <wire from="(480,320)" to="(500,320)"/>
+    <wire from="(480,340)" to="(500,340)"/>
   </circuit>
   <circuit name="D_Flipflop">
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="D_Flipflop"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(100,130)" name="Pin">
+    <comp lib="0" loc="(100,150)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="CLK"/>
     </comp>
-    <comp lib="0" loc="(100,180)" name="Pin">
+    <comp lib="0" loc="(100,90)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="D"/>
     </comp>
@@ -156,18 +186,18 @@
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="Slave_Q_negiert"/>
     </comp>
-    <wire from="(100,130)" to="(150,130)"/>
-    <wire from="(100,180)" to="(190,180)"/>
-    <wire from="(150,130)" to="(150,270)"/>
-    <wire from="(150,130)" to="(600,130)"/>
+    <wire from="(100,150)" to="(150,150)"/>
+    <wire from="(100,90)" to="(190,90)"/>
+    <wire from="(150,150)" to="(150,270)"/>
+    <wire from="(150,150)" to="(600,150)"/>
     <wire from="(150,270)" to="(150,530)"/>
     <wire from="(150,270)" to="(210,270)"/>
     <wire from="(150,530)" to="(210,530)"/>
-    <wire from="(190,180)" to="(190,230)"/>
-    <wire from="(190,180)" to="(880,180)"/>
     <wire from="(190,230)" to="(190,490)"/>
     <wire from="(190,230)" to="(270,230)"/>
     <wire from="(190,490)" to="(210,490)"/>
+    <wire from="(190,90)" to="(190,230)"/>
+    <wire from="(190,90)" to="(880,90)"/>
     <wire from="(240,270)" to="(270,270)"/>
     <wire from="(240,490)" to="(270,490)"/>
     <wire from="(240,530)" to="(270,530)"/>
@@ -185,8 +215,8 @@
     <wire from="(520,270)" to="(630,270)"/>
     <wire from="(520,430)" to="(520,490)"/>
     <wire from="(520,490)" to="(630,490)"/>
-    <wire from="(600,130)" to="(600,310)"/>
-    <wire from="(600,130)" to="(880,130)"/>
+    <wire from="(600,150)" to="(600,310)"/>
+    <wire from="(600,150)" to="(880,150)"/>
     <wire from="(600,310)" to="(600,450)"/>
     <wire from="(600,310)" to="(630,310)"/>
     <wire from="(600,450)" to="(630,450)"/>
@@ -204,5 +234,79 @@
     <wire from="(850,310)" to="(910,310)"/>
     <wire from="(850,400)" to="(850,450)"/>
     <wire from="(850,450)" to="(930,450)"/>
+  </circuit>
+  <circuit name="Register_1_Bit">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Register_1_Bit"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(120,140)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Load"/>
+    </comp>
+    <comp lib="0" loc="(180,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="D"/>
+    </comp>
+    <comp lib="0" loc="(550,380)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(840,260)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Q"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(840,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Q_negiert"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(170,140)" name="NOT Gate"/>
+    <comp lib="1" loc="(250,140)" name="NOT Gate"/>
+    <comp lib="1" loc="(380,220)" name="AND Gate"/>
+    <comp lib="1" loc="(380,300)" name="AND Gate"/>
+    <comp lib="1" loc="(520,260)" name="OR Gate"/>
+    <comp lib="8" loc="(397,317)" name="Text">
+      <a name="font" val="SansSerif bold 12"/>
+      <a name="text" val="D_2"/>
+    </comp>
+    <comp lib="8" loc="(401,213)" name="Text">
+      <a name="font" val="SansSerif bold 12"/>
+      <a name="text" val="D_1"/>
+    </comp>
+    <comp lib="8" loc="(568,245)" name="Text">
+      <a name="font" val="SansSerif bold 12"/>
+      <a name="text" val="D_fuer_Flipflop"/>
+    </comp>
+    <comp loc="(810,260)" name="D_Flipflop"/>
+    <wire from="(120,140)" to="(140,140)"/>
+    <wire from="(170,140)" to="(190,140)"/>
+    <wire from="(180,280)" to="(330,280)"/>
+    <wire from="(190,140)" to="(190,240)"/>
+    <wire from="(190,140)" to="(220,140)"/>
+    <wire from="(190,240)" to="(330,240)"/>
+    <wire from="(250,140)" to="(270,140)"/>
+    <wire from="(270,140)" to="(270,320)"/>
+    <wire from="(270,320)" to="(330,320)"/>
+    <wire from="(310,170)" to="(310,200)"/>
+    <wire from="(310,170)" to="(820,170)"/>
+    <wire from="(310,200)" to="(330,200)"/>
+    <wire from="(380,220)" to="(420,220)"/>
+    <wire from="(380,300)" to="(420,300)"/>
+    <wire from="(420,220)" to="(420,240)"/>
+    <wire from="(420,240)" to="(470,240)"/>
+    <wire from="(420,280)" to="(420,300)"/>
+    <wire from="(420,280)" to="(470,280)"/>
+    <wire from="(520,260)" to="(590,260)"/>
+    <wire from="(550,380)" to="(580,380)"/>
+    <wire from="(580,280)" to="(580,380)"/>
+    <wire from="(580,280)" to="(590,280)"/>
+    <wire from="(810,260)" to="(820,260)"/>
+    <wire from="(810,280)" to="(840,280)"/>
+    <wire from="(820,170)" to="(820,260)"/>
+    <wire from="(820,260)" to="(840,260)"/>
   </circuit>
 </project>
