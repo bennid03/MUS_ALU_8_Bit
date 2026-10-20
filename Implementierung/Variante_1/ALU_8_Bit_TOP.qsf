@@ -53,8 +53,9 @@ set_global_assignment -name VHDL_FILE ALU_8_Bit_TOP.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_A8 -to Ausgang
-set_location_assignment PIN_C10 -to Eingang1
-set_location_assignment PIN_C11 -to Eingang2
 set_global_assignment -name VHDL_FILE D_Flipflop.vhd
+set_location_assignment PIN_C10 -to Daten1
+set_location_assignment PIN_A7 -to Taster_CLK
+set_location_assignment PIN_A8 -to Flipflop_Ausgang
+set_location_assignment PIN_A9 -to Flipflop_Ausgang_negiert
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

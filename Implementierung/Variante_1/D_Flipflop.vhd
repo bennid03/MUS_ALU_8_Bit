@@ -3,46 +3,60 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 use ieee.numeric_std.all;
 
+
 ----------------------------------------------------------------------------------
--- Top-Level-Entity 
+-- Entity 
 ----------------------------------------------------------------------------------
 Entity D_Flipflop is
 Port(
-	D: in std_logic;
 	CLK: in std_logic;
+	D: in std_logic;
 	Q: out std_logic;
 	negiertes_Q: out std_logic
 );
 End D_Flipflop;
-
 
 ----------------------------------------------------------------------------------
 -- Architecture
 ----------------------------------------------------------------------------------
 Architecture Arch_D_Flipflop of D_Flipflop is
 
-signal CLK_1: std_logic;
-signal D_1: std_logic;
-signal D_2: std_logic;
-signal Q_intern: std_logic;
-signal negiertes_Q_intern: std_logic;
+--Master-Latch
+signal M1: std_logic;
+signal M2: std_logic;
+signal Master_Q: std_logic;
+signal Master_Q_negiert: std_logic;
+
+--Slave-Latch
+signal S1: std_logic;
+signal S2: std_logic;
+signal Slave_Q: std_logic;
+signal Slave_Q_negiert: std_logic;
 
 Begin
 
-	CLK_1 <= CLK AND (NOT CLK);
+	M1 <= D NAND (not CLK);
+	M2 <= (not D) NAND (not CLK);
+	Master_Q <= M1 NAND Master_Q_negiert;
+	Master_Q_negiert <= M2 NAND Master_Q;
 	
-	D_1 <= D NAND CLK_1;
+	S1 <= Master_Q NAND CLK;
+	S2 <= Master_Q_negiert NAND CLK;
+	Slave_Q <= S1 NAND Slave_Q_negiert;
+	Slave_Q_negiert <= Slave_Q NAND S2;
 	
-	D_2 <= (NOT D) NAND CLK_1;
-	
-	Q_intern <= D_1 NAND negiertes_Q_intern;
-	
-	negiertes_Q_intern <= D_2 NAND Q_intern;
+	Q <= Slave_Q;
+	negiertes_Q <= Slave_Q_negiert;
 	
 	
-	Q <= Q_intern;
-	
-	negiertes_Q <= negiertes_Q_intern;
-	
-
 End Arch_D_Flipflop;
+
+
+
+
+
+
+
+
+
+
