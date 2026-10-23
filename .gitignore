@@ -93,6 +93,11 @@
 **/sim/
 **/testbench/
 
+# ------------------------------------
+# MAC OS spezifische Dateien
+# ------------------------------------
+**/*.DS_Store
+
 # ---------------------------------------------------
 # Diese Dateien dürfen nicht ignoriert werden
 #   - *.qpf (Projektdefinition)
