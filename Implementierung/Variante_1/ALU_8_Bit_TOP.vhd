@@ -11,6 +11,7 @@ Port(
 	Taster_CLK: in std_logic;
 	Daten: in std_logic_vector(7 downto 0);
 	Load: in std_logic;
+	Reset: in std_logic;
 	Register_Ausgang: out std_logic_vector(7 downto 0)
 );
 End ALU_8_Bit_TOP;
@@ -27,7 +28,7 @@ Begin
 
 		
 	Register_8_Bit_1: entity work.Register_8_Bit
-		port map(Taster_CLK, Load, Daten, Register_Ausgang, Register_Ausgang_negiert);
+		port map(Taster_CLK, Load, Reset, Daten, Register_Ausgang, Register_Ausgang_negiert);
 	
 
 
