@@ -10,7 +10,8 @@ Entity D_Flipflop is
 Port(
     CLK: in std_logic;
     D: in std_logic;
-    Reset: in std_logic;
+    async_Reset: in std_logic;
+	 sync_Reset: in std_logic;
     Q: out std_logic;
     negiertes_Q: out std_logic
 );
@@ -33,17 +34,23 @@ Architecture Arch_D_Flipflop of D_Flipflop is
     signal Slave_Q: std_logic;
     signal Slave_Q_negiert: std_logic;
 
+	 --weitere Signals
+	 signal D_intern: std_logic;
+	 
 Begin
 
+    --Erzeugung des internen Datensignals
+	 D_intern <= (not sync_Reset) AND D; 
+
     -- Master-Latch
-    M1 <= (D NAND (not CLK)) OR Reset;
-    M2 <= ((not D) NAND (not CLK)) AND (not Reset);
+    M1 <= (D_intern NAND (not CLK)) OR async_Reset;
+    M2 <= ((not D_intern) NAND (not CLK)) AND (not async_Reset);
     Master_Q <= M1 NAND Master_Q_negiert;
     Master_Q_negiert <= M2 NAND Master_Q;
 
     -- Slave-Latch
-    S1 <= (Master_Q NAND CLK) OR Reset;
-    S2 <= (Master_Q_negiert NAND CLK) AND (not Reset);
+    S1 <= (Master_Q NAND CLK) OR async_Reset;
+    S2 <= (Master_Q_negiert NAND CLK) AND (not async_Reset);
     Slave_Q <= S1 NAND Slave_Q_negiert;
     Slave_Q_negiert <= S2 NAND Slave_Q;
 

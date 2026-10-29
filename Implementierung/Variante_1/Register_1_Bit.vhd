@@ -10,7 +10,8 @@ Entity Register_1_Bit is
 Port(
 	CLK: in std_logic;
 	Load: in std_logic;
-	Reset: in std_logic;
+	async_Reset: in std_logic;
+	sync_Reset: in std_logic;
 	Daten: in std_logic;
 	Q: out std_logic;
 	Q_negiert: out std_logic
@@ -36,7 +37,7 @@ Begin
 	D_fuer_Flipflop <= D_1 OR D_2;
 	
 	D_Flipflop1: entity work.D_Flipflop
-		port map(CLK, D_fuer_Flipflop, Reset, Q_intern, Q_negiert_intern);
+		port map(CLK, D_fuer_Flipflop, async_Reset, sync_Reset, Q_intern, Q_negiert_intern);
 		
 	Q <= Q_intern;
 	Q_negiert <= Q_negiert_intern;
