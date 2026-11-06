@@ -1230,7 +1230,7 @@
     <comp lib="1" loc="(610,210)" name="AND Gate"/>
     <comp lib="1" loc="(620,150)" name="XOR Gate"/>
     <comp lib="1" loc="(720,290)" name="OR Gate"/>
-    <comp lib="8" loc="(390,127)" name="Text">
+    <comp lib="8" loc="(390,125)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="a"/>
     </comp>
@@ -1238,7 +1238,7 @@
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="b"/>
     </comp>
-    <comp lib="8" loc="(639,236)" name="Text">
+    <comp lib="8" loc="(635,235)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="c"/>
     </comp>
@@ -1317,7 +1317,7 @@
     </comp>
     <comp lib="1" loc="(620,200)" name="AND Gate"/>
     <comp lib="1" loc="(630,140)" name="XOR Gate"/>
-    <comp lib="8" loc="(630,193)" name="Text">
+    <comp lib="8" loc="(630,190)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="a"/>
     </comp>
@@ -6532,7 +6532,7 @@
     </comp>
     <comp lib="0" loc="(360,320)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="Operand1"/>
+      <a name="label" val="Operand_1"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(380,320)" name="Splitter">
@@ -6541,7 +6541,7 @@
     </comp>
     <comp lib="0" loc="(530,910)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="Operand2"/>
+      <a name="label" val="Operand_2"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(550,910)" name="Splitter">
