@@ -1455,9 +1455,15 @@
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
     </comp>
-    <comp loc="(580,210)" name="MUX_1_Bit_2x1"/>
-    <comp loc="(580,340)" name="MUX_1_Bit_2x1"/>
-    <comp loc="(920,240)" name="MUX_1_Bit_2x1"/>
+    <comp loc="(580,210)" name="MUX_1_Bit_2x1">
+      <a name="label" val="MUX_1"/>
+    </comp>
+    <comp loc="(580,340)" name="MUX_1_Bit_2x1">
+      <a name="label" val="MUX_2"/>
+    </comp>
+    <comp loc="(920,240)" name="MUX_1_Bit_2x1">
+      <a name="label" val="MUX_3"/>
+    </comp>
     <wire from="(180,550)" to="(200,550)"/>
     <wire from="(190,230)" to="(360,230)"/>
     <wire from="(190,250)" to="(360,250)"/>
