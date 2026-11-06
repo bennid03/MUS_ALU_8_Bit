@@ -1603,9 +1603,15 @@
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
     </comp>
-    <comp loc="(600,220)" name="MUX_1_Bit_4x1"/>
-    <comp loc="(600,400)" name="MUX_1_Bit_4x1"/>
-    <comp loc="(970,320)" name="MUX_1_Bit_2x1"/>
+    <comp loc="(600,220)" name="MUX_1_Bit_4x1">
+      <a name="label" val="MUX_1"/>
+    </comp>
+    <comp loc="(600,400)" name="MUX_1_Bit_4x1">
+      <a name="label" val="MUX_2"/>
+    </comp>
+    <comp loc="(970,320)" name="MUX_1_Bit_2x1">
+      <a name="label" val="MUX_3"/>
+    </comp>
     <wire from="(180,650)" to="(200,650)"/>
     <wire from="(200,620)" to="(200,650)"/>
     <wire from="(210,220)" to="(380,220)"/>
@@ -1719,9 +1725,15 @@
       <a name="appearance" val="NewPins"/>
       <a name="label" val="D15"/>
     </comp>
-    <comp loc="(1000,260)" name="MUX_1_Bit_2x1"/>
-    <comp loc="(610,100)" name="MUX_1_Bit_8x1"/>
-    <comp loc="(610,350)" name="MUX_1_Bit_8x1"/>
+    <comp loc="(1000,260)" name="MUX_1_Bit_2x1">
+      <a name="label" val="MUX_3"/>
+    </comp>
+    <comp loc="(610,100)" name="MUX_1_Bit_8x1">
+      <a name="label" val="MUX_1"/>
+    </comp>
+    <comp loc="(610,350)" name="MUX_1_Bit_8x1">
+      <a name="label" val="MUX_2"/>
+    </comp>
     <wire from="(1000,260)" to="(1020,260)"/>
     <wire from="(190,700)" to="(210,700)"/>
     <wire from="(210,680)" to="(210,700)"/>
@@ -1910,9 +1922,15 @@
       <a name="appearance" val="NewPins"/>
       <a name="label" val="D0"/>
     </comp>
-    <comp loc="(1010,430)" name="MUX_1_Bit_2x1"/>
-    <comp loc="(590,490)" name="MUX_1_Bit_16x1"/>
-    <comp loc="(590,80)" name="MUX_1_Bit_16x1"/>
+    <comp loc="(1010,430)" name="MUX_1_Bit_2x1">
+      <a name="label" val="MUX_3"/>
+    </comp>
+    <comp loc="(590,490)" name="MUX_1_Bit_16x1">
+      <a name="label" val="MUX_2"/>
+    </comp>
+    <comp loc="(590,80)" name="MUX_1_Bit_16x1">
+      <a name="label" val="MUX_1"/>
+    </comp>
     <wire from="(1010,430)" to="(1030,430)"/>
     <wire from="(130,950)" to="(160,950)"/>
     <wire from="(180,900)" to="(200,900)"/>
@@ -2274,8 +2292,12 @@
     <comp lib="0" loc="(990,90)" name="Splitter">
       <a name="facing" val="south"/>
     </comp>
-    <comp loc="(1990,1090)" name="MUX_1_Bit_32x1"/>
-    <comp loc="(1990,350)" name="MUX_1_Bit_32x1"/>
+    <comp loc="(1990,1090)" name="MUX_1_Bit_32x1">
+      <a name="label" val="MUX_2"/>
+    </comp>
+    <comp loc="(1990,350)" name="MUX_1_Bit_32x1">
+      <a name="label" val="MUX_1"/>
+    </comp>
     <wire from="(1000,110)" to="(1000,1510)"/>
     <wire from="(1000,1510)" to="(1770,1510)"/>
     <wire from="(1010,110)" to="(1010,770)"/>
@@ -2856,8 +2878,12 @@
       <a name="facing" val="south"/>
       <a name="incoming" val="4"/>
     </comp>
-    <comp loc="(2160,1400)" name="MUX_2_Bit_32x1"/>
-    <comp loc="(2160,660)" name="MUX_2_Bit_32x1"/>
+    <comp loc="(2160,1400)" name="MUX_2_Bit_32x1">
+      <a name="label" val="MUX_2"/>
+    </comp>
+    <comp loc="(2160,660)" name="MUX_2_Bit_32x1">
+      <a name="label" val="MUX_1"/>
+    </comp>
     <wire from="(1010,1740)" to="(1940,1740)"/>
     <wire from="(1010,420)" to="(1010,1740)"/>
     <wire from="(1020,1000)" to="(1940,1000)"/>
@@ -3570,8 +3596,12 @@
       <a name="facing" val="south"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp loc="(2160,1400)" name="MUX_4_Bit_32x1"/>
-    <comp loc="(2160,660)" name="MUX_4_Bit_32x1"/>
+    <comp loc="(2160,1400)" name="MUX_4_Bit_32x1">
+      <a name="label" val="MUX_2"/>
+    </comp>
+    <comp loc="(2160,660)" name="MUX_4_Bit_32x1">
+      <a name="label" val="MUX_1"/>
+    </comp>
     <wire from="(1010,1740)" to="(1940,1740)"/>
     <wire from="(1010,420)" to="(1010,1740)"/>
     <wire from="(1020,1000)" to="(1940,1000)"/>
@@ -4581,8 +4611,12 @@
       <a name="facing" val="south"/>
       <a name="incoming" val="16"/>
     </comp>
-    <comp loc="(2160,1400)" name="MUX_8_Bit_32x1"/>
-    <comp loc="(2160,660)" name="MUX_8_Bit_32x1"/>
+    <comp loc="(2160,1400)" name="MUX_8_Bit_32x1">
+      <a name="label" val="MUX_2"/>
+    </comp>
+    <comp loc="(2160,660)" name="MUX_8_Bit_32x1">
+      <a name="label" val="MUX_1"/>
+    </comp>
     <wire from="(1010,1740)" to="(1940,1740)"/>
     <wire from="(1010,420)" to="(1010,1740)"/>
     <wire from="(1020,1000)" to="(1940,1000)"/>
@@ -6120,8 +6154,12 @@
       <a name="facing" val="south"/>
       <a name="incoming" val="32"/>
     </comp>
-    <comp loc="(2160,1400)" name="MUX_16_Bit_32x1"/>
-    <comp loc="(2160,660)" name="MUX_16_Bit_32x1"/>
+    <comp loc="(2160,1400)" name="MUX_16_Bit_32x1">
+      <a name="label" val="MUX_2"/>
+    </comp>
+    <comp loc="(2160,660)" name="MUX_16_Bit_32x1">
+      <a name="label" val="MUX_1"/>
+    </comp>
     <wire from="(1010,1740)" to="(1940,1740)"/>
     <wire from="(1010,420)" to="(1010,1740)"/>
     <wire from="(1020,1000)" to="(1940,1000)"/>
