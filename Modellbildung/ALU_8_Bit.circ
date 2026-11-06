@@ -851,22 +851,54 @@
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
-    <comp loc="(1140,390)" name="MUX_1_Bit_4x1"/>
-    <comp loc="(1150,850)" name="Register_1_Bit"/>
-    <comp loc="(1620,850)" name="Register_1_Bit"/>
-    <comp loc="(1630,390)" name="MUX_1_Bit_4x1"/>
-    <comp loc="(2060,410)" name="MUX_1_Bit_4x1"/>
-    <comp loc="(2060,850)" name="Register_1_Bit"/>
-    <comp loc="(2510,850)" name="Register_1_Bit"/>
-    <comp loc="(2520,420)" name="MUX_1_Bit_4x1"/>
-    <comp loc="(3020,850)" name="Register_1_Bit"/>
-    <comp loc="(3030,420)" name="MUX_1_Bit_4x1"/>
-    <comp loc="(3530,420)" name="MUX_1_Bit_4x1"/>
-    <comp loc="(3530,850)" name="Register_1_Bit"/>
-    <comp loc="(4030,420)" name="MUX_1_Bit_4x1"/>
-    <comp loc="(4030,850)" name="Register_1_Bit"/>
-    <comp loc="(650,380)" name="MUX_1_Bit_4x1"/>
-    <comp loc="(650,850)" name="Register_1_Bit"/>
+    <comp loc="(1140,390)" name="MUX_1_Bit_4x1">
+      <a name="label" val="MUX_6"/>
+    </comp>
+    <comp loc="(1150,850)" name="Register_1_Bit">
+      <a name="label" val="Register_6"/>
+    </comp>
+    <comp loc="(1620,850)" name="Register_1_Bit">
+      <a name="label" val="Register_5"/>
+    </comp>
+    <comp loc="(1630,390)" name="MUX_1_Bit_4x1">
+      <a name="label" val="MUX_5"/>
+    </comp>
+    <comp loc="(2060,410)" name="MUX_1_Bit_4x1">
+      <a name="label" val="MUX_4"/>
+    </comp>
+    <comp loc="(2060,850)" name="Register_1_Bit">
+      <a name="label" val="Register_4"/>
+    </comp>
+    <comp loc="(2510,850)" name="Register_1_Bit">
+      <a name="label" val="Register_3"/>
+    </comp>
+    <comp loc="(2520,420)" name="MUX_1_Bit_4x1">
+      <a name="label" val="MUX_3"/>
+    </comp>
+    <comp loc="(3020,850)" name="Register_1_Bit">
+      <a name="label" val="Register_2"/>
+    </comp>
+    <comp loc="(3030,420)" name="MUX_1_Bit_4x1">
+      <a name="label" val="MUX_2"/>
+    </comp>
+    <comp loc="(3530,420)" name="MUX_1_Bit_4x1">
+      <a name="label" val="MUX_1"/>
+    </comp>
+    <comp loc="(3530,850)" name="Register_1_Bit">
+      <a name="label" val="Register_1"/>
+    </comp>
+    <comp loc="(4030,420)" name="MUX_1_Bit_4x1">
+      <a name="label" val="MUX_0"/>
+    </comp>
+    <comp loc="(4030,850)" name="Register_1_Bit">
+      <a name="label" val="Register_0"/>
+    </comp>
+    <comp loc="(650,380)" name="MUX_1_Bit_4x1">
+      <a name="label" val="MUX_7"/>
+    </comp>
+    <comp loc="(650,850)" name="Register_1_Bit">
+      <a name="label" val="Register_7"/>
+    </comp>
     <wire from="(1140,390)" to="(1150,390)"/>
     <wire from="(1150,390)" to="(1150,720)"/>
     <wire from="(1150,850)" to="(1170,850)"/>

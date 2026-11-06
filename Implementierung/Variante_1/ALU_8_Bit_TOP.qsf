@@ -77,4 +77,5 @@ set_location_assignment PIN_A8 -to Register_Ausgang[0]
 set_location_assignment PIN_B14 -to sync_Reset
 set_global_assignment -name VHDL_FILE MUX_1_Bit_2x1.vhd
 set_global_assignment -name VHDL_FILE MUX_1_Bit_4x1.vhd
+set_global_assignment -name VHDL_FILE Schieberegister_8_Bit.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
