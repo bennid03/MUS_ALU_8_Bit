@@ -25,7 +25,8 @@ End ALU_8_Bit_TOP;
 Architecture Arch_ALU_8_Bit_TOP of ALU_8_Bit_TOP is
 
 Begin
-
+	
+	--Über die folgende Einheit legt der Nutzer fest, welche Operation in der ALU durchgeführt werden soll.
 	Auswahl_Operation_1: entity work.Auswahl_Operation
 		port map(CLK_50MHz, Taster_Auswahl_Operation, Sieben_Segment_5, Sieben_Segment_4, Sieben_Segment_3,
 					Operation);

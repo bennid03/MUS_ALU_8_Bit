@@ -33,6 +33,10 @@ Architecture Arch_Auswahl_Operation of Auswahl_Operation is
 	signal Operation_binaer_intern: std_logic_vector(7 downto 0);
 	signal Operation_BCD: std_logic_vector(11 downto 0);
 	
+	--Über OPERATION_MAX_WERT wird der maximale Wert der Operationen festgelegt.
+	--Beispiel:
+	--OPERATION_MAX_WERT = 20
+	--Es gibt die Operationen 0 bis 20
 	constant OPERATION_MAX_WERT: unsigned(7 downto 0):= to_unsigned(20,8);
 	
 Begin
