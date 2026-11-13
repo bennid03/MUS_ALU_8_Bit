@@ -15,7 +15,8 @@ Port(
 	Taster_Auswahl_Operation: in std_logic;
 	Sieben_Segment_5: out std_logic_vector (6 downto 0);
 	Sieben_Segment_4: out std_logic_vector (6 downto 0);
-	Sieben_Segment_3: out std_logic_vector (6 downto 0)
+	Sieben_Segment_3: out std_logic_vector (6 downto 0);
+	Bestaetigungs_LED: out std_logic
 );
 End ALU_8_Bit_TOP;
 
@@ -34,6 +35,10 @@ Begin
 	Auswahl_Operation_1: entity work.Auswahl_Operation
 		port map(CLK_50MHz, Taster_Auswahl_Operation, Sieben_Segment_5, Sieben_Segment_4, Sieben_Segment_3,
 					Operation);
+					
+	--Die folgende Einheit sorgt dafür, dass bei Betätigung des Tasters "ALU_CLK" die Bestätigungs-LED für 1 Sekunde aufleuchtet.
+	Aufleuchten_Bestaetigungs_LED_1: entity work.Aufleuchten_Bestaetigungs_LED
+		port map(CLK_50MHz, ALU_CLK, Bestaetigungs_LED);
 					
 	--In der folgenden Einheit ist die eigentliche ALU implementiert
 	ALU_8_Bit_1: entity work.ALU_8_Bit
