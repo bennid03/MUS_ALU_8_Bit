@@ -1,0 +1,39 @@
+To-Do-Liste MUS-Projekt:
+
+============================================================================
+Schritt 1:
+
+Modellierung von:
+- Speicher (schon begonnen, aber noch nicht fertig) --> Benjamin
+
+Implementierung von:
+- Addierer_Subtrahierer_Komponente
+- Addierer_Subtrahierer_8_Bit
+- Multiplizierer_8_Bit
+- AND_8x1 (Komponente vom Multiplizierer)
+- Speicher
+- MUX_2_Bit_16x1
+- MUX_4_Bit_16x1
+- MUX_8_Bit_16x1
+
+==================================================================================================
+Schritt 2:
+- Definition des Befehlssatzes (einfach Tabelle in Google Docs erstellen)
+- Zusammensetzen aller Komponenten in Modellierung
+- Zusammensetzen aller Komponenten in Implementierung
+
+==================================================================================================
+Schritt 3: (wenn alles vorherige Funktioniert)
+- Ergänzung von Flags in Modellierung und Implementierung
+- Implementierung des Dividierers
+  (verkompliziert System stark, da Division nicht innerhalb eines Taktes geschieht; 
+   Division in nur einem Takt laut Herrn Gregorius nicht möglich)
+
+
+
+
+
+
+
+
+
