@@ -4,19 +4,23 @@ To-Do-Liste MUS-Projekt:
 Schritt 1:
 
 Modellierung von:
-- Speicher (schon begonnen, aber noch nicht fertig) --> Benjamin
+- Speicher_8_Bit_32_Adressen (Benjamin)
+- Speicher_8_Bit_64_Adressen (Benjamin)
+- Speicher_8_Bit_128_Adressen (Benjamin)
+- Speicher_8_Bit_256_Adressen (Benjamin)
 
 Implementierung von:
-- Addierer_Subtrahierer_Komponente --> Theo (fertig)
-- Addierer_Subtrahierer_8_Bit --> Theo (fertig)
 - Multiplizierer_8_Bit --> Theo (nicht fertig)
-- AND_8x1 (Komponente vom Multiplizierer) --> Theo (fertig)
-- Speicher
-- MUX_2_Bit_16x1
-- MUX_4_Bit_16x1
-- MUX_8_Bit_16x1
-- MUX_16_Bit_16x1
-- AND_16x1
+- MUX_2_Bit_16x1 --> Theo
+- MUX_4_Bit_16x1 --> Theo
+- MUX_8_Bit_16x1 --> Theo
+- MUX_16_Bit_16x1 --> Theo
+- AND_16x1 --> Theo
+- Speicher_8_Bit_16_Adressen
+- Speicher_8_Bit_32_Adressen
+- Speicher_8_Bit_64_Adressen
+- Speicher_8_Bit_128_Adressen
+- Speicher_8_Bit_256_Adressen
 
 ==================================================================================================
 Schritt 2:
