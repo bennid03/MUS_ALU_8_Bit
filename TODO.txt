@@ -7,10 +7,10 @@ Modellierung von:
 - Speicher (schon begonnen, aber noch nicht fertig) --> Benjamin
 
 Implementierung von:
-- Addierer_Subtrahierer_Komponente
-- Addierer_Subtrahierer_8_Bit
-- Multiplizierer_8_Bit
-- AND_8x1 (Komponente vom Multiplizierer)
+- Addierer_Subtrahierer_Komponente --> Theo (fertig)
+- Addierer_Subtrahierer_8_Bit --> Theo (fertig)
+- Multiplizierer_8_Bit --> Theo (nicht fertig)
+- AND_8x1 (Komponente vom Multiplizierer) --> Theo (fertig)
 - Speicher
 - MUX_2_Bit_16x1
 - MUX_4_Bit_16x1
