@@ -9172,12 +9172,12 @@
     </comp>
     <comp lib="0" loc="(230,210)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="Operant_2"/>
+      <a name="label" val="Operant_1"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(230,320)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="Operand_1"/>
+      <a name="label" val="Operand_2"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(2360,460)" name="Splitter">
