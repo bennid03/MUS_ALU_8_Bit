@@ -4,15 +4,9 @@ To-Do-Liste MUS-Projekt:
 Schritt 1:
 
 Implementierung von:
-- Multiplizierer_8_Bit --> Theo (nicht fertig)
-- MUX_2_Bit_16x1 --> Theo
-- MUX_4_Bit_16x1 --> Theo
-- MUX_8_Bit_16x1 --> Theo
-- MUX_16_Bit_16x1 --> Theo
-- AND_16x1 --> Theo
-- MUX_2_Bit_2x1
-- MUX_4_Bit_2x1
-- MUX_8_Bit_2x1
+- MUX_2_Bit_2x1 fertig
+- MUX_4_Bit_2x1 fertig(aber falsch benannt, aktuell: MUX_2_Bit_4x1)
+- MUX_8_Bit_2x1 fertig(aber falsch benannt, aktuell: MUX_2_Bit_8x1)
 - Speicher_8_Bit_16_Adressen
 - Speicher_8_Bit_32_Adressen
 - Speicher_8_Bit_64_Adressen
