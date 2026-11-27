@@ -4,9 +4,6 @@ To-Do-Liste MUS-Projekt:
 Schritt 1:
 
 Implementierung von:
-- MUX_2_Bit_4x1
-- MUX_4_Bit_4x1
-- MUX_8_Bit_4x1
 - Speicher_8_Bit_16_Adressen
 - Speicher_8_Bit_32_Adressen
 - Speicher_8_Bit_64_Adressen
