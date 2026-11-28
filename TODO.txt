@@ -4,11 +4,7 @@ To-Do-Liste MUS-Projekt:
 Schritt 1:
 
 Implementierung von:
-- Speicher_8_Bit_16_Adressen (fertig)
-- Speicher_8_Bit_32_Adressen
-- Speicher_8_Bit_64_Adressen
-- Speicher_8_Bit_128_Adressen
-- Speicher_8_Bit_256_Adressen
+Alle Speicher fertig :)
 
 ==================================================================================================
 Schritt 2:
